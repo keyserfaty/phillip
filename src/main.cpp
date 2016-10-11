@@ -128,6 +128,36 @@ void loop() {
   }
 
   // Handle on touch
+  int touch_north = digitalRead(TOTEM_NORTH_TOUCH);
+  int touch_west = digitalRead(TOTEM_WEST_TOUCH);
+  int touch_east = digitalRead(TOTEM_EAST_TOUCH);
+
+  if (touch_north == HIGH) {
+    digitalWrite(TOTEM_CENTER_RED_1, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_RED_2, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_RED_3, HIGH);
+    delay(200);
+  }
+
+  if (touch_west == HIGH) {
+    digitalWrite(TOTEM_CENTER_BLUE_1, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_BLUE_2, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_BLUE_3, HIGH);
+    delay(200);
+  }
+
+  if (touch_east == HIGH) {
+    digitalWrite(TOTEM_CENTER_YELLOW_1, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_YELLOW_2, HIGH);
+    delay(200);
+    digitalWrite(TOTEM_CENTER_YELLOW_3, HIGH);
+    delay(200);
+  }
 
 
 
