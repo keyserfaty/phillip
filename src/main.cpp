@@ -3,9 +3,15 @@
 /* Lights */
 
 // Totem center
-const int TOTEM_CENTER_RED = 4;
-const int TOTEM_CENTER_BLUE = 4;
-const int TOTEM_CENTER_YELLOW = 4;
+const int TOTEM_CENTER_RED_1 = 4;
+const int TOTEM_CENTER_RED_2 = 4;
+const int TOTEM_CENTER_RED_3 = 4;
+const int TOTEM_CENTER_BLUE_1 = 4;
+const int TOTEM_CENTER_BLUE_2 = 4;
+const int TOTEM_CENTER_BLUE_3 = 4;
+const int TOTEM_CENTER_YELLOW_1 = 4;
+const int TOTEM_CENTER_YELLOW_2 = 4;
+const int TOTEM_CENTER_YELLOW_3 = 4;
 
 // Totem north
 const int TOTEM_NORTH_WHITE = 4;
@@ -49,9 +55,15 @@ void setup() {
   /* Initialize all lights */
 
   // Totem center
-  pinMode(TOTEM_CENTER_RED, OUTPUT);
-  pinMode(TOTEM_CENTER_BLUE, OUTPUT);
-  pinMode(TOTEM_CENTER_YELLOW, OUTPUT);
+  pinMode(TOTEM_CENTER_RED_1, OUTPUT);
+  pinMode(TOTEM_CENTER_RED_2, OUTPUT);
+  pinMode(TOTEM_CENTER_RED_3, OUTPUT);
+  pinMode(TOTEM_CENTER_BLUE_1, OUTPUT);
+  pinMode(TOTEM_CENTER_BLUE_2, OUTPUT);
+  pinMode(TOTEM_CENTER_BLUE_3, OUTPUT);
+  pinMode(TOTEM_CENTER_YELLOW_1, OUTPUT);
+  pinMode(TOTEM_CENTER_YELLOW_2, OUTPUT);
+  pinMode(TOTEM_CENTER_YELLOW_3, OUTPUT);
 
   // Totem north
   pinMode(TOTEM_NORTH_WHITE, OUTPUT);
@@ -83,7 +95,7 @@ void setup() {
 
 void loop() {
   // By default the Center Totem is turned on with a red light
-  digitalWrite(TOTEM_CENTER_RED, HIGH);
+  digitalWrite(TOTEM_CENTER_RED_1, HIGH);
 
   // Handle on proximity
   int proximity_north = digitalRead(TOTEM_NORTH_PROXIMITY);
@@ -116,7 +128,7 @@ void loop() {
   }
 
   // Handle on touch
-  
+
 
 
   // digitalWrite(BLUE, HIGH);
